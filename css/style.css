@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  overflow-x: hidden;
+}
+body {
+  background: #dde9ffd7;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.score {
+  display: none;
+}
+.quiz {
+  display: none;
+}
+.container {
+  background: #92b8ff;
+  width: 450px;
+  padding: 20px 30px;
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: 3px 3px 6px 3px #666;
+}
+.diff,
+.selection,
+.num {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+.container > * {
+  font-weight: 600;
+  font-size: 110%;
+  padding: 5px 0;
+}
+h1 {
+  margin-bottom: 20px;
+}
+#category,
+#number {
+  margin-top: -4px;
+}
+.large {
+  font-size: 120%;
+  font-weight: 600;
+  margin: 0 20px 0 0;
+}
+#number {
+  width: 150px;
+}
+select,
+#number {
+  padding: 8px;
+}
+select,
+button,
+option,
+#number {
+  background: #dde9ffd7;
+  border: none;
+  border-radius: 5px;
+  font-size: 95%;
+  font-weight: 600;
+  outline: none;
+}
+button {
+  font-size: 140%;
+  box-shadow: 4px 4px 4px 2px #333;
+  cursor: pointer;
+  padding: 10px 50px;
+  margin-top: 20px;
+}
+button:hover {
+  transform: scale(1.1);
+}
+/* Quiz Page */
+.quiz input[type="radio"] {
+  width: 18px;
+  height: 18px;
+}
+.quiz label {
+  text-align: left;
+  line-height: 25px;
+  padding: 5px;
+  background: #0189c97c;
+  border-radius: 5px;
+  width: 100%;
+}
+.currentQ {
+  margin-left: 320px;
+  font-size: 120%;
+}
+.choices {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+/* score Page */
+.score {
+  font-size: 110%;
+}
+.score h3,
+.score h2 {
+  font-size: 105%;
+  margin-top: 10px;
+}
+#again {
+  padding: 10px 50px;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 260px;
+    font-size: 100%;
+  }
+  .large {
+    font-size: 17.1px;
+    margin-bottom: 15px;
+    display: block;
+  }
+  .selection {
+    display: inline-block;
+    overflow-x: hidden;
+  }
+  option {
+    font-size: 60%;
+    max-width: 280px;
+    overflow-x: hidden;
+  }
+  .diff {
+    display: block;
+    font-size: 16px;
+  }
+  .num {
+    display: inline;
+  }
+  button {
+    margin-top: 25px;
+  }
+  .currentQ {
+    margin-left: 140px;
+  }
+}

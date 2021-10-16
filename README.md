@@ -14,3 +14,9 @@ Quiz App using:
 
 - Responsive CSS style
 - Handled some issues like: multiple choices - Return the user to the Home Page if there was any errors in fetching the API, after showing the error message
+
+## 
+
+<br>
+
+![quiz](https://user-images.githubusercontent.com/66003360/137592540-a9a6d356-8f33-44cf-8c83-373488941f67.jpeg)
